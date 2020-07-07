@@ -40,6 +40,8 @@ def main():
         current_player, next_player = next_player, current_player  # swaps turns
         print("Thanks for playing!")
 
+# Print Blank Tic-Tac-Toe Board to the screen
+
 
 def getBlankBoard():
     """Create a new, blank tic-tac-toe board"""
@@ -95,32 +97,3 @@ def updateBoard(board, space, mark):
 
 if __name__ == "__main__":
     main()  # Call main() if this module is run, but not when imported.
-
-# Board Dictionary Dat Structure.
-# theBoard = {
-#     "top-L": " ", "top-M": " ", "top-R": " ",
-#     "mid-L": " ", "mid-M": " ", "mid-R": " ",
-#     "low-L": " ", "low-M": " ", "low-R": " ",
-# }
-
-# Screen Board
-
-
-# def printBoard(board):
-#     print(board["top-L"] + "|" + board["top-M"] + "|" + board["top-R"])
-#     print("-+-+-")
-#     print(board["mid-L"] + "|" + board["mid-M"] + "|" + board["mid-R"])
-#     print("-+-+-")
-#     print(board["low-L"] + "|" + board["low-M"] + "|" + board["low-R"])
-
-
-# for i in range(9):
-#     printBoard(theBoard)
-#     print("Turn for " + turn + ". Move on which space?")
-#     move = input()
-#     theBoard[move] = turn
-#     if turn == "X":
-#         turn = "O"
-#     else:
-#         turn = "X"
-# printBoard(theBoard)
